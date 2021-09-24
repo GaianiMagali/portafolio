@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar1 from '../assets/avatar1.png';
+import avatar1 from '../../assets/avatar1.png';
 
 export const ImageSection = () => {
     return (
