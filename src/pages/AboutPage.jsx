@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageSection } from '../components/sections/ImageSection';
 import { ServicesSection } from '../components/sections/ServicesSection';
 import { SkillsSection } from '../components/sections/SkillsSection';
-import { Title } from '../components/Title';
+import { Title } from '../components/common/Title';
 import design  from '../assets/design.svg';
 import intelligence  from '../assets/intelligence.svg';
 import gamedev  from '../assets/gamedev.svg';

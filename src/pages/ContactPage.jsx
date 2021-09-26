@@ -4,7 +4,7 @@ import { ContactItem } from '../components/contact/ContactItem';
 import phone from '../assets/phone.svg';
 import email from '../assets/emailme.svg';
 import location from '../assets/location.svg';
-import { Title } from '../components/Title';
+import { Title } from '../components/common/Title';
 
 export const ContactPage = () => {
     return (

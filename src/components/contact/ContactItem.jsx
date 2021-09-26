@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ContactItem = ({icon, text1, text2, title}) => {
+export const ContactItem = ({ icon, text1, text2, title }) => {
     return (
         <div className="ContactItem">
             <div className="contact">

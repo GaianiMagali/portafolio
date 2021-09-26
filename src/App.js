@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
-import { Navbar } from './components/Navbar';
+import { Navbar } from './components/common/Navbar';
 import { Particle } from './components/ui/Particle';
 import { AppRouter } from './routes/AppRouter';
 
 
 export const App = () => {
+  const [navToggle, setNavToggle] = useState(false);
+
+  const navClick = () => {
+    setNavToggle(!navToggle)
+  }
+
   return (
     <div className="App">
-      <div className="sidebar">
+      <div className={`sidebar ${navToggle ? 'nav-toggle' : ''}`}>
         <Navbar />
       </div>
+      <div className="nav-btn" onClick={navClick}>
+        <div className="lines-1"></div>
+        <div className="lines-2"></div>
+        <div className="lines-3"></div>
+      </div>
       <div className="main-content">
-        <div className="particle-con" style={{ "position": "absolute", "top": 0, "left": 0, zIndex: 2 }}>
-          <Particle />
-        </div>
         <div className="content">
           <AppRouter />
         </div>
